@@ -27,7 +27,7 @@ Tech:
 # State of the art 
 Electrical components were connected according to connection_scheme.png. 3D models were done with help of Fusion 3D and tinkercad.com. Metal profiles were cut with metal saw and all holes in this project were done with a drill. Metal profiles were used to mount a solar pannel to 3D printed parts with M6 bolts, nuts and washers. Some soldering were requried with the used battery basket and in the making of the coaxial cable. 3D models were printed on Prusa MK3 and Creality K1.
 
-![Internal parts](gallery/image-3.jpg "Title")
+![Internal parts](gallery/image-3.jpg "Internals")
 
 T-Beam was flashed using official Meshtastic site (https://flasher.meshtastic.org). You can set it up using your smartphone with the help of their official app or by connecting you PC to it via micro USB cable (client.meshtastic.org). If you plan to do it with your smartphone set up everything as you wish before changing your T-Beam profile to repeater/router as it will turn off bluetooth, telemetry and internal screen (for more information refer to meshtastic documentation). The main difference between repeater and router is that repeater is not discoverable as a node. We choose to keep most of the default router mode settings. The things we changed were:
 - setting GPS updates every 24h (could be even longer if you don't expect it to move)
@@ -39,3 +39,8 @@ T-Beam was flashed using official Meshtastic site (https://flasher.meshtastic.or
 Some more work is requried in holder for electronics components (na_elementy.stl) as screwholes for MPPT don't align properly. In the future it would be nice to add additional power sources such as wind/rain turbine. Future contributors could add their own sensors (temperature, wind force/direction, rain, microparticles, scintilator counter) and program it to annouce the measured data to a private/public channel. A nice addition would be also to make this system relay official annoucment from goverment channels (from the internet or Alert RCB) to a special meshtastic channel.
 # Sources 
 - ...
+
+# Gallery
+![Internal parts](gallery/image-0.jpg)
+![Internal parts](gallery/image-1.jpg)
+![Internal parts](gallery/image-2.jpg)
