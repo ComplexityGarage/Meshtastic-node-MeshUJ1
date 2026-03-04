@@ -3,7 +3,7 @@
 - Maksymilian Podżorski
 - Jan Skiba
 # Description of the project 
-Fully offgrid repeater/router working in Meshtastic network. Designed for deployment on the roof of WFAIS UJ or any other remote location. Would have a meaningful application in apocaliptic scenarios when all others communication systems would fail. Powered by a solar panel in sunny times and by a battery bank in not so sunny moments. Project includes used 3D models, guidelines for dercreasing power consuption of the setup and mathematica notebook for estimating number of batteries you should use. There are also some photos for inspirational purposes.
+Fully offgrid repeater/router working in Meshtastic network. Designed for deployment on the roof of WFAIS UJ or any other remote location. Would have a meaningful application in apocaliptic scenarios when all others communication systems would fail. Powered by a solar panel in sunny times and by a battery bank in not so sunny moments. Project includes used 3D models, guidelines for decreasing power consuption of the setup and mathematica notebook for estimating number of batteries you should use. There are also some photos for inspirational purposes.
 # Science and tech used 
 Science used:
 - Classical Electrodynamics
