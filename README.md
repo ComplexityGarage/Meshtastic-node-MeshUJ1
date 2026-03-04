@@ -7,6 +7,7 @@ Fully offgrid repeater/router working in Meshtastic network. Designed for deploy
 # Science and tech used 
 Science used:
 - Classical Electrodynamics
+
 Tech:
 - Module ESP32 TTGO Meshtastic T-Beam V1.2 433Mhz from LilyGO
 - 6x batteries 18650 3500 mAh (pink :) )
