@@ -1,0 +1,13 @@
+(*kalkulator zapasu dni bez slonca*)
+pojBaterii=3500 (*mAh*);
+napBaterii=3.7 (*V*);
+mocPanel=20(*W*);
+poborTBeam=5*0.13 (*Wh*);
+numBaterii=6;
+czasPelneSlonce=1(*h (w zimie tak by to wypadalo liczyc)*);
+energiaBaterii=pojBaterii/1000*napBaterii*numBaterii*0.75; (*Wh*)
+energiaPanel=mocPanel*czasPelneSlonce*0.75;(*Wh*)
+dniZapasu=energiaBaterii/((poborTBeam*24)-energiaPanel);
+If[(poborTBeam*24)>energiaPanel, Print["system sie nie bilansuje rozladuje sie po ",dniZapasu, " dnia" ],Print["system bilansuje sie"]]
+
+During evaluation of In[104]:= system sie nie bilansuje rozladuje sie po 97.125 dnia

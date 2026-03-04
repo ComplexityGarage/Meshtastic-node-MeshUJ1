@@ -1,0 +1,141 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      4724,        133]
+NotebookOptionsPosition[      4142,        115]
+NotebookOutlinePosition[      4553,        131]
+CellTagsIndexPosition[      4510,        128]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+  "kalkulator", " ", "zapasu", " ", "dni", " ", "bez", " ", "slonca"}], 
+  "*)"}]], "Input",
+ CellChangeTimes->{{3.977743543173174*^9, 
+  3.977743560074297*^9}},ExpressionUUID->"92b8c5aa-31b8-6845-9082-\
+c1c712b3590e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"pojBaterii", "=", "3500"}], " ", 
+  RowBox[{"(*", "mAh", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"napBaterii", "=", "3.7"}], " ", 
+  RowBox[{"(*", "V", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mocPanel", "=", "20"}], 
+  RowBox[{"(*", "W", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"poborTBeam", "=", 
+   RowBox[{"5", "*", "0.13"}]}], " ", 
+  RowBox[{"(*", "Wh", "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"numBaterii", "=", "6"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"czasPelneSlonce", "=", "1"}], 
+  RowBox[{"(*", 
+   RowBox[{"h", " ", 
+    RowBox[{"(", 
+     RowBox[{
+     "w", " ", "zimie", " ", "tak", " ", "by", " ", "to", " ", "wypadalo", 
+      " ", "liczyc"}], ")"}]}], "*)"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"energiaBaterii", "=", 
+    RowBox[{
+     FractionBox["pojBaterii", "1000"], "*", "napBaterii", "*", "numBaterii", 
+     "*", "0.75"}]}], ";"}], " ", 
+  RowBox[{"(*", "Wh", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"energiaPanel", "=", 
+    RowBox[{"mocPanel", "*", "czasPelneSlonce", "*", "0.75"}]}], ";"}], 
+  RowBox[{"(*", "Wh", "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dniZapasu", "=", 
+   FractionBox["energiaBaterii", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"poborTBeam", "*", "24"}], ")"}], "-", "energiaPanel"}]]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"If", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"poborTBeam", "*", "24"}], ")"}], ">", "energiaPanel"}], ",", 
+   " ", 
+   RowBox[{"Print", "[", 
+    RowBox[{
+    "\"\<system sie nie bilansuje rozladuje sie po \>\"", ",", "dniZapasu", 
+     ",", " ", "\"\< dnia\>\""}], " ", "]"}], ",", 
+   RowBox[{"Print", "[", "\"\<system bilansuje sie\>\"", "]"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.977743578808096*^9, 3.9777436072771244`*^9}, {
+  3.977743787155777*^9, 3.9777439348377132`*^9}, {3.97774398212397*^9, 
+  3.9777439844227695`*^9}, {3.9777440590404987`*^9, 3.9777442271762733`*^9}, {
+  3.977744317165493*^9, 3.9777443455210915`*^9}, {3.977744375584524*^9, 
+  3.9777444129865875`*^9}, {3.977744444649332*^9, 3.9777445494499416`*^9}, {
+  3.9777446100147*^9, 3.9777446129858074`*^9}, {3.977744658981518*^9, 
+  3.977744744168297*^9}, {3.977745051729395*^9, 3.977745070689636*^9}, {
+  3.977745403998825*^9, 3.977745411408127*^9}, {3.9777454610373974`*^9, 
+  3.9777454611416607`*^9}, {3.9777456236172237`*^9, 3.9777456257225437`*^9}, {
+  3.9777457350327034`*^9, 3.977745735599207*^9}, {3.9777459111062336`*^9, 
+  3.977745916413904*^9}, {3.9777466557825317`*^9, 
+  3.977746668328684*^9}},ExpressionUUID->"018a27d2-91e3-5746-9cae-\
+46d28d911e2b"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"system sie nie bilansuje rozladuje sie po \"\>", 
+   "\[InvisibleSpace]", "97.12499999999979`", 
+   "\[InvisibleSpace]", "\<\" dnia\"\>"}],
+  SequenceForm[
+  "system sie nie bilansuje rozladuje sie po ", 97.12499999999979, " dnia"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.977745736431183*^9, {3.977745911798481*^9, 3.977745917151102*^9}},
+ CellLabel->
+  "During evaluation of \
+In[104]:=",ExpressionUUID->"e2ada7ef-f0ca-f548-b308-d3943035e4ce"]
+}, Open  ]]
+},
+WindowSize->{1080, 540},
+WindowMargins->{{-4.875, Automatic}, {Automatic, -4.875}},
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"8e435d7d-49ba-644e-b46c-c035cb69c032"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 259, 7, 28, "Input",ExpressionUUID->"92b8c5aa-31b8-6845-9082-c1c712b3590e"],
+Cell[CellGroupData[{
+Cell[842, 31, 2773, 67, 281, "Input",ExpressionUUID->"018a27d2-91e3-5746-9cae-46d28d911e2b"],
+Cell[3618, 100, 508, 12, 22, "Print",ExpressionUUID->"e2ada7ef-f0ca-f548-b308-d3943035e4ce"]
+}, Open  ]]
+}
+]
+*)
+
