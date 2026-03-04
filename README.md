@@ -1,8 +1,9 @@
 # Meshtastic node - MeshUJ1
 # Authors 
-- Imię Nazwisko
+- Maksymilian Podżorski
+- Jan Skiba
 # Description of the project 
-Text here... 
+Fully offgrid repeater/router working in Meshtastic network. Designed for deployment on the roof of WFAIS UJ or any other remote location. Powered by a solar panel in sunny times and by a battery bank in not so sunny moments.
 # Science and tech used 
 Text & plots here... 
 # State of the art 
