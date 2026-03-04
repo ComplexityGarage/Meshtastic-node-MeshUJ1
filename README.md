@@ -11,7 +11,7 @@ Tech:
 - Module ESP32 TTGO Meshtastic T-Beam V1.2 433Mhz from LilyGO
 - 6x batteries 18650 3500 mAh (pink :) )
 - 20 W solar panel
-- BMS + solar panel management system combo (MPPT)
+- BMS + solar panel management system combo (MPPT) (Waveshare 16120 - based on CS8501 and CN3791)
 - Plastic box (IP65 or IP66 would be best)
 - Coaxial cable SMA male-male
 - 868 MHz antena
